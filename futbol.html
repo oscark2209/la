@@ -1,82 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Configuración de caracteres UTF-8 para soportar caracteres especiales -->
     <meta charset="UTF-8" />
+    <!-- Configuración responsive para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlace a la hoja de estilos CSS externa -->
+    <link href="style.css" rel="stylesheet"/>
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>FUTPRO</title>
+    
+    <!-- Encabezado de la página -->
     <header>
+      <!-- Título principal del sitio -->
       <h1>FUTPRO</h1>
+      <!-- Menú de navegación -->
       <nav>
         <ul>
-          
+          <!-- Enlaces de navegación que llevan a diferentes secciones de la página -->
           <li><a href="#inicio">OBJETOS EN VENTA</a></li>
           <li><a href="#Camisetas">Camisetas</a></li>
           <li><a href="#Balones">Balones</a></li>
           <li><a href="#Guayos">Guayos</a></li>
           <li><a href="#especificaciones">ESPECIFICACIONES</a></li>
-
         </ul>
       </nav>
     </header>
   </head>
+  
   <body>
-    <main>
-      <h1 id="inicio">OBJETOS EN VENTA</h1>
-      <section id="Camisetas">
-        <h2>Camisetas</h2>
-        <p>HERMOSA CAMISETA DEL BARCELONA ANTIGUA</p>
-        <figure>
-          <img
-            src="imagenes/barcelona.jpg"
-            width="200"
-            height="250"
-            alt="a mithic beutifull Tshirt"
-          />
-          <figcaption>
-            <h3>price :345.000</h3>
-            <h3>tallas: xs,s,m,l,xl,xxl</h3>
-          </figcaption>
-        </figure>
-      </section id="Balones">
-      <h2>Balones</h2>
-      <p>HERMOSO BALON DE LA CHAMPIONS LEAGUE</p>
-      <figure>
-        <img
-          src="imagenes/balon.avif"
-          width="200"
-          height="250"
-          alt="a mithic beutifull balon"
-        />
-        <figcaption>
-          <h3>Precio :200.000</h3>
-          <h3>tamaño :INFANTIL, GRANDE</h3>
-        </figcaption>
-      </figure>
-      <section id="Guayos">
-        <h2>Guayos</h2>
-
-        <p>HERMOSOS GUAYOS DE LIONEL MESSI</p>
-        <figure>
-          <img
-            src="imagenes/guayosmessi.webp"
-            width="350"
-            height="250"
-            alt="a mithic beutifull Guayos"
-          />
-          <figcaption>
-            <h3>price :450.000</h3>
-            <h3>tallas:</h3>
-          </figcaption>
-
-          <div>
-            <img src="imagenes/tallas.webp" width="200" height="250" alt="tallaje" />
-          </div>
-        </figure>
-      </section>
-      <h1 id="especificaciones">ESPECIFICACIONES</h1>
-
-      <h3>CAMISETAS:</h3>
-      <p>Tipo de inventario: pedido completo
+    <!-- Contenedor principal de la tienda -->
+    <div class="tienda">
+      <main>
+        <!-- Sección de inicio con título principal -->
+        <h1 id="inicio">OBJETOS EN VENTA</h1>
+        
+        <!-- Contenedor de todos los artículos -->
+        <article class="items">
+          
+          <!-- SECCIÓN 1: CAMISETAS -->
+          <section id="Camisetas">
+            <h2 class="Camisetas">Camisetas</h2>
+            <p>HERMOSA CAMISETA DEL BARCELONA ANTIGUA</p>
+            
+            <!-- Figura que contiene imagen y descripción del producto -->
+            <figure>
+              <!-- Imagen del producto con dimensiones especificadas -->
+              <img
+                src="imagenes/barcelona.jpg"
+                width="200"
+                height="250"
+                alt="a mithic beutifull Tshirt"
+              />
+              <!-- Información del producto (precio, tallas, botón de compra) -->
+              <figcaption>
+                <h3>price :345.000</h3>
+                <h3>tallas: xs,s,m,l,xl,xxl</h3>
+                <!-- Enlace externo a la tienda oficial de Barcelona -->
+                <a href="https://store.fcbarcelona.com/es-co/pages/fc-barcelona-x-travis-scott?country=CO">
+                  <button>COMPRA AQUI</button>
+                </a>
+              </figcaption>
+            </figure>
+          </section>
+          
+          <!-- SECCIÓN 2: BALONES -->
+          <!-- Nota: falta el atributo 'id' en la etiqueta section -->
+          <section id="Balones">
+            <h2>Balones</h2>
+            <p>HERMOSO BALON DE LA CHAMPIONS LEAGUE</p>
+            
+            <!-- Figura del balón -->
+            <figure>
+              <img
+                src="imagenes/balon.avif"
+                width="200"
+                height="250"
+                alt="a mithic beutifull balon"
+              />
+              <figcaption>
+                <h3>Precio :899.950</h3>
+                <h3>tamaño :INFANTIL, GRANDE</h3>
+                <!-- Enlace a Adidas para comprar el balón -->
+                <a href="https://www.adidas.co/balon-ucl-pro/JH1279.html">
+                  <button>COMPRA AQUI</button>
+                </a>
+              </figcaption>
+            </figure>
+          </section>
+          
+          <!-- SECCIÓN 3: GUAYOS -->
+          <section id="Guayos">
+            <h2>Guayos</h2>
+            <p>HERMOSOS GUAYOS DE LIONEL MESSI</p>
+            
+            <figure>
+              <img
+                src="imagenes/guayosmessi.webp"
+                width="350"
+                height="250"
+                alt="a mithic beutifull Guayos"
+              />
+              <figcaption>
+                <h3>price :450.000</h3>
+                <h3>tallas:</h3>
+                <!-- Enlace a página de productos Messi de Adidas -->
+                <a href="https://www.adidas.co/messi">
+                  <button>COMPRA AQUI</button>
+                </a>
+              </figcaption>
+              
+              <!-- TABLA DE CONVERSIÓN DE TALLAS -->
+              <div class="tabla-tallas">
+                <h3>TABLA DE TALLAS</h3>
+                <!-- Tabla con borde y espaciado -->
+                <table border="1" cellpadding="10" cellspacing="0">
+                  <!-- Encabezados de la tabla -->
+                  <tr>
+                    <th>Talla (Colombia)</th>
+                    <th>Talla (US)</th>
+                    <th>Talla (EU)</th>
+                    <th>Longitud (cm)</th>
+                  </tr>
+                  <!-- Filas con equivalencias de tallas -->
+                  <tr>
+                    <td>36</td>
+                    <td>6</td>
+                    <td>38</td>
+                    <td>23 cm</td>
+                  </tr>
+                  <tr>
+                    <td>37</td>
+                    <td>6.5</td>
+                    <td>38.5</td>
+                    <td>23.5 cm</td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>7</td>
+                    <td>39</td>
+                    <td>24 cm</td>
+                  </tr>
+                  <tr>
+                    <td>39</td>
+                    <td>8</td>
+                    <td>40</td>
+                    <td>25 cm</td>
+                  </tr>
+                  <tr>
+                    <td>40</td>
+                    <td>8.5</td>
+                    <td>41</td>
+                    <td>25.5 cm</td>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>9</td>
+                    <td>42</td>
+                    <td>26 cm</td>
+                  </tr>
+                  <tr>
+                    <td>42</td>
+                    <td>10</td>
+                    <td>43</td>
+                    <td>27 cm</td>
+                  </tr>
+                  <tr>
+                    <td>43</td>
+                    <td>11</td>
+                    <td>44</td>
+                    <td>28 cm</td>
+                  </tr>
+                </table>
+              </div>
+            </figure>
+          </section>
+        </article>
+        
+        <!-- SECCIÓN DE ESPECIFICACIONES DETALLADAS -->
+        <h1 id="especificaciones" style="text-align:center;">ESPECIFICACIONES</h1>
+        
+        <!-- Tarjeta con especificaciones de camisetas -->
+        <div class="card">
+          <h3>CAMISETAS:</h3>
+          <p>Tipo de inventario: pedido completo
 Temporadas adecuadas: verano, invierno, primavera, otoño
 Género aplicable: neutral/Tanto para hombres como para mujeres
 Grupo de edad aplicable: adultos
@@ -84,18 +191,25 @@ Grupo de edad aplicable: adultos
 patrón: estampado
 Nombre de la tela: fibra de poliéster
 Composición del tejido: fibra de poliéster (poliéster)
-Contenido de la composición del tejido
-: 100 Nombre del
-forro: fibra de poliéster Composición del
-forro: fibra de poliéster (poliéster) Contenido de la composición del forro
-: 100 Escenarios aplicables: correr, fútbol, baloncesto y voleibol</p>
-<h3>BALON</h3>
-<p>El nuevo balón de la Champions League 2024-25 es un espectáculo visual. Sus vibrantes colores y diseño innovador prometen una experiencia de juego única. Con tecnología de última generación, este esférico garantiza un vuelo preciso y un toque excepcional.
+Contenido de la composición del tejido: 100 
+Nombre del forro: fibra de poliéster 
+Composición del forro: fibra de poliéster (poliéster) 
+Contenido de la composición del forro: 100 
+Escenarios aplicables: correr, fútbol, baloncesto y voleibol</p>
+        </div>
+        
+        <!-- Tarjeta con especificaciones del balón -->
+        <div class="card">
+          <h3>BALON</h3>
+          <p>El nuevo balón de la Champions League 2024-25 es un espectáculo visual. Sus vibrantes colores y diseño innovador prometen una experiencia de juego única. Con tecnología de última generación, este esférico garantiza un vuelo preciso y un toque excepcional.
 El balón oficial de la UEFA Champions League 2024-25 presenta un diseño vanguardista que combina elementos clásicos del torneo con detalles modernos. Su superficie texturizada proporciona un agarre óptimo en cualquier condición climática, mientras que su núcleo de alta densidad asegura un rebote consistente y predecible. La cámara de aire de butilo garantiza una retención de aire superior, manteniendo el balón en perfectas condiciones durante todo el partido.
 Siente la emoción de la Champions League con cada toque de este balón excepcional. Su diseño inspirador y su rendimiento inigualable te transportarán al corazón de la competición. Este balón no es solo un objeto deportivo, es un símbolo de pasión y excelencia.</p>
-    </main>
-    <h3>GUAYOS</h3>
-    <p>Los Guayos Adidas Messi F50 para Niños son la elección perfecta para los pequeños futbolistas que buscan rendimiento y estilo en el campo. Diseñados con un material de cuero sintético, ofrecen una comodidad excepcional y un ajuste seguro, permitiendo que los niños se concentren en su juego sin distracciones.
+        </div>
+        
+        <!-- Tarjeta con especificaciones de los guayos -->
+        <div class="card">
+          <h3>GUAYOS</h3>
+          <p>Los Guayos Adidas Messi F50 para Niños son la elección perfecta para los pequeños futbolistas que buscan rendimiento y estilo en el campo. Diseñados con un material de cuero sintético, ofrecen una comodidad excepcional y un ajuste seguro, permitiendo que los niños se concentren en su juego sin distracciones.
 
 La suela SG (Soft Ground) está especialmente diseñada para césped natural, proporcionando un agarre óptimo en condiciones húmedas y resbaladizas. Esto permite que los jóvenes atletas realicen movimientos rápidos y precisos, mejorando su desempeño en cada partido.
 
@@ -104,8 +218,14 @@ El modelo cuenta con un cierre de cordones que asegura un ajuste personalizado, 
 Ideal para entrenamientos y partidos, los Guayos Adidas Messi F50 son una inversión en la pasión y el talento de los futuros campeones. Equipar a los niños con este calzado es darles la oportunidad de jugar con confianza y estilo, mientras desarrollan sus habilidades en el fútbol.
 
 Sin garantía</p>
+        
+      </main>
+    </div>
   </body>
+  
+  <!-- Pie de página con créditos del autor -->
   <footer>
-    <h3> HECHO POR: OSCAR DAVID RUIZ HERNANDEZ</h1>
+    <h3>HECHO POR: OSCAR DAVID RUIZ HERNANDEZ</h3>
   </footer>
+  </div>
 </html>

@@ -1,0 +1,206 @@
+/* ==================================================
+   CSS SIMPLE PARA PRINCIPIANTES - BLOG DE FÚTBOL
+   ================================================== */
+
+/* 1. QUITAR MÁRGENES Y PADDING DE TODO */
+* {
+    margin: 0;           /* Sin márgenes */
+    padding: 0;          /* Sin espacios internos */
+}
+
+/* 2. ESTILOS DEL BODY (TODA LA PÁGINA) */
+body {
+    font-family: Arial;  /* Fuente simple */
+    background-color: lightblue;  /* Fondo azul claro */
+}
+
+/* 3. CONTENEDOR PRINCIPAL */
+.container {
+    width: 90%;          /* Ancho del 90% */
+    margin: 0 auto;      /* Centrado horizontal */
+    padding: 20px;       /* Espacio interno */
+}
+
+/* 4. HEADER (ENCABEZADO VERDE) */
+header {
+    background-color: green;     /* Fondo verde */
+    color: white;                /* Texto blanco */
+    padding: 20px;               /* Espacio interno */
+    border-radius: 10px;         /* Esquinas redondeadas */
+    margin-bottom: 20px;         /* Espacio abajo */
+}
+
+header h1 {
+    font-size: 40px;     /* Tamaño grande */
+    text-align: center;  /* Centrado */
+}
+
+/* 5. MENÚ DE NAVEGACIÓN */
+nav ul {
+    list-style: none;    /* Sin puntos */
+    padding: 10px;       /* Espacio interno */
+}
+
+nav li {
+    display: inline;     /* En línea horizontal */
+    margin-right: 20px;  /* Espacio entre enlaces */
+}
+
+nav a {
+    color: white;        /* Color blanco */
+    text-decoration: none;  /* Sin subrayado */
+    font-weight: bold;   /* Texto en negrita */
+    font-size: 18px;     /* Tamaño mediano */
+}
+
+nav a:hover {
+    color: yellow;       /* Cambia a amarillo al pasar el mouse */
+}
+
+/* 6. CONTENIDO PRINCIPAL (2 COLUMNAS) */
+.main-content {
+    display: flex;       /* Disposición flexible */
+    gap: 20px;           /* Espacio entre columnas */
+}
+
+/* 7. ARTÍCULO (COLUMNA IZQUIERDA) */
+article {
+    flex: 2;             /* Ocupa 2 partes del espacio */
+    background-color: white;  /* Fondo blanco */
+    padding: 30px;       /* Espacio interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+article h2 {
+    color: darkblue;     /* Color azul oscuro */
+    font-size: 35px;     /* Tamaño grande */
+    border-bottom: 3px solid green;  /* Línea verde abajo */
+    padding-bottom: 10px;  /* Espacio abajo del texto */
+    margin-bottom: 20px;   /* Margen abajo */
+}
+
+article h3 {
+    color: blue;         /* Color azul */
+    font-size: 25px;     /* Tamaño mediano */
+    margin-top: 20px;    /* Espacio arriba */
+    margin-bottom: 10px; /* Espacio abajo */
+}
+
+article p {
+    color: black;        /* Color negro */
+    font-size: 16px;     /* Tamaño normal */
+    line-height: 1.6;    /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espacio abajo */
+}
+
+.article-meta {
+    color: gray;         /* Color gris */
+    font-style: italic;  /* Cursiva */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+.intro-paragraph {
+    font-size: 18px;     /* Tamaño un poco más grande */
+    font-style: italic;  /* Cursiva */
+    color: darkgray;     /* Color gris oscuro */
+    border-left: 4px solid green;  /* Línea verde a la izquierda */
+    padding-left: 15px;  /* Espacio a la izquierda del texto */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+blockquote {
+    background-color: lightyellow;  /* Fondo amarillo claro */
+    border-left: 5px solid green;   /* Línea verde izquierda */
+    padding: 15px;       /* Espacio interno */
+    margin: 20px 0;      /* Márgenes arriba y abajo */
+    font-style: italic;  /* Cursiva */
+}
+
+article ul {
+    margin-left: 40px;   /* Margen izquierdo */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+article li {
+    margin-bottom: 10px; /* Espacio entre items */
+    color: black;        /* Color negro */
+}
+
+/* 8. SIDEBAR (COLUMNA DERECHA) */
+aside {
+    flex: 1;             /* Ocupa 1 parte del espacio */
+}
+
+.sidebar-section {
+    background-color: white;  /* Fondo blanco */
+    padding: 20px;       /* Espacio interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+.sidebar-section h3 {
+    color: darkblue;     /* Color azul oscuro */
+    font-size: 22px;     /* Tamaño mediano */
+    border-bottom: 2px solid green;  /* Línea verde abajo */
+    padding-bottom: 10px;  /* Espacio abajo del texto */
+    margin-bottom: 15px;   /* Margen abajo */
+}
+
+.sidebar-section p {
+    color: gray;         /* Color gris */
+    font-size: 14px;     /* Tamaño pequeño */
+    line-height: 1.5;    /* Espaciado entre líneas */
+}
+
+.sidebar-section ul {
+    list-style: none;    /* Sin puntos */
+}
+
+.sidebar-section li {
+    margin-bottom: 10px; /* Espacio entre items */
+}
+
+.sidebar-section a {
+    color: blue;         /* Color azul */
+    text-decoration: none;  /* Sin subrayado */
+    font-weight: bold;   /* Negrita */
+}
+
+.sidebar-section a:hover {
+    color: green;        /* Cambia a verde al pasar el mouse */
+}
+
+/* 9. FOOTER (PIE DE PÁGINA) */
+footer {
+    background-color: darkblue;  /* Fondo azul oscuro */
+    color: white;        /* Texto blanco */
+    text-align: center;  /* Centrado */
+    padding: 20px;       /* Espacio interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin-top: 30px;    /* Espacio arriba */
+}
+
+footer a {
+    color: lightgreen;   /* Color verde claro */
+    text-decoration: none;  /* Sin subrayado */
+}
+
+footer a:hover {
+    color: yellow;       /* Cambia a amarillo al pasar el mouse */
+}
+
+/* 10. RESPONSIVE (PARA MÓVILES) */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;  /* Una columna en móviles */
+    }
+    
+    header h1 {
+        font-size: 30px;  /* Título más pequeño */
+    }
+    
+    nav li {
+        display: block;   /* Menú vertical */
+        margin-bottom: 10px;  /* Espacio entre enlaces */
+    }
+}

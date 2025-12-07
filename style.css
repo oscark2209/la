@@ -1,105 +1,108 @@
 
-header {
-background-color: greenyellow;
-font-size: x-large;
-text-align: justify;
-font-family: 'Courier New', Courier, monospace;
-border: 5px solid black;
-  padding: 10px;
-  margin: 10px;
+header {                                    /* Selector para el elemento <header> */
+  background-color: greenyellow;        /* Color de fondo verde amarillento */
+  font-size: x-large;                   /* Tamaño de fuente extra grande (~24px) */
+  text-align: justify;                  /* Alinea el texto de forma justificada */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada tipo máquina de escribir */
+  border: 5px solid black;              /* Borde negro sólido de 5 píxeles */
+  padding: 10px;                        /* Espacio interno de 10px en todos los lados */
+  margin: 10px;                         /* Espacio externo de 10px en todos los lados */
 }
 
-body {
-
-    background-image: url(https://us.123rf.com/450wm/leavector/leavector1906/leavector190600103/126161329-football-soccer-background-doodle-pattern-vector-illustration-background-for-print-textile-web.jpg);
-
-
-}
-camisetas {
-text-align: center;
-background-color :aliceblue
-
-}
-.tienda {
-  border: 5px solid black;
-  padding: 10px;
-  margin: 10px;
-  background-color: lightgray;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace
-}
-balon {
-    text-align: center;
-    font-size: medium;
-    font-family: 'Courier New', Courier, monospace;
-    background-color : black;
-}
-button {
-  background-color: greenyellow;
-  border: 5px solid black;
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-h3 {
-  text-align: center;
-}
-.tabla-tallas {
-  width: 40%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  background-color: #eaf3ff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+body {                                  /* Selector para el elemento <body> */
+  background-image: url(https://us.123rf.com/450wm/leavector/leavector1906/leavector190600103/126161329-football-soccer-background-doodle-pattern-vector-illustration-background-for-print-textile-web.jpg); /* Imagen de fondo con patrón de fútbol que se repite */
 }
 
-.tabla-tallas th {
-  background: #4A90E2;
-  color: white;
-  padding: 14px;
-  text-transform: uppercase;
-  font-size: 15px;
+camisetas {                             /* Selector incorrecto: debería ser .camisetas o #camisetas */
+  text-align: center;                   /* Centra el texto horizontalmente */
+  background-color: aliceblue;          /* Color de fondo azul claro */
 }
 
-.tabla-tallas td {
-  padding: 12px;
-  border-bottom: 1px solid #e0e0e0;
-  text-align: center;
-  font-size: 14px;
+.tienda {                               /* Selector de clase para elementos con class="tienda" */
+  border: 5px solid black;              /* Borde negro sólido de 5 píxeles */
+  padding: 10px;                        /* Espacio interno de 10px en todos los lados */
+  margin: 10px;                         /* Espacio externo de 10px en todos los lados */
+  background-color: lightgray;          /* Color de fondo gris claro */
+  text-align: center;                   /* Centra todo el contenido horizontalmente */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
 }
 
-.tabla-tallas tr:nth-child(even) {
-  background: #f7faff;
+balon {                                 /* Selector incorrecto: debería ser .balon o #balon */
+  text-align: center;                   /* Centra el texto horizontalmente */
+  font-size: medium;                    /* Tamaño de fuente mediano (~16px) */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  background-color: black;              /* Color de fondo negro */
 }
 
-.tabla-tallas tr:hover {
-  background: #eaf3ff;
-}
-.card {
-  width: 90%;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.card h3 {
-  margin-top: 0;
-  color: black;
-  font-size: 22px;
+button {                                /* Selector para todos los elementos <button> */
+  background-color: greenyellow;        /* Color de fondo verde amarillento */
+  border: 5px solid black;              /* Borde negro sólido de 5 píxeles */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  color: black;                         /* Color del texto negro */
+  padding: 15px 32px;                   /* Espacio interno: 15px arriba/abajo, 32px izq/der */
+  text-align: center;                   /* Centra el texto del botón */
+  text-decoration: none;                /* Elimina decoración de texto (subrayado, etc.) */
+  display: inline-block;                /* Comportamiento de bloque en línea */
+  font-size: 16px;                      /* Tamaño de fuente de 16 píxeles */
+  margin: 4px 2px;                      /* Margen: 4px arriba/abajo, 2px izq/der */
+  cursor: pointer;                      /* Cambia el cursor a "manita" al pasar sobre el botón */
 }
 
-.card p {
-  line-height: 1.6;
-  font-size: 15px;
-  color: #333;
+h3 {                                    /* Selector para todos los elementos <h3> */
+  text-align: center;                   /* Centra todos los h3 horizontalmente */
+}
+
+.tabla-tallas {                         /* Selector de clase para elementos con class="tabla-tallas" */
+  width: 40%;                           /* Ancho del 40% del contenedor padre */
+  margin: 20px auto;                    /* Margen: 20px arriba/abajo, centrado horizontalmente */
+  border-collapse: collapse;            /* Elimina espacios entre bordes de celdas */
+  background-color: #eaf3ff;            /* Color de fondo azul muy claro */
+  border-radius: 12px;                  /* Esquinas redondeadas de 12 píxeles */
+  overflow: hidden;                     /* Oculta contenido que sobresale del elemento */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Sombra: 0px horiz, 4px vert, 15px difum, negro 15% */
+}
+
+.tabla-tallas th {                      /* Selector para <th> dentro de .tabla-tallas */
+  background: #4A90E2;                  /* Color de fondo azul para encabezados */
+  color: white;                         /* Color del texto blanco */
+  padding: 14px;                        /* Espacio interno de 14 píxeles */
+  text-transform: uppercase;            /* Convierte el texto a MAYÚSCULAS */
+  font-size: 15px;                      /* Tamaño de fuente de 15 píxeles */
+}
+
+.tabla-tallas td {                      /* Selector para <td> dentro de .tabla-tallas */
+  padding: 12px;                        /* Espacio interno de 12 píxeles */
+  border-bottom: 1px solid #e0e0e0;     /* Borde inferior gris claro de 1 píxel */
+  text-align: center;                   /* Centra el contenido de las celdas */
+  font-size: 14px;                      /* Tamaño de fuente de 14 píxeles */
+}
+
+.tabla-tallas tr:nth-child(even) {      /* Selector para filas pares dentro de .tabla-tallas */
+  background: #f7faff;                  /* Color de fondo azul muy claro (efecto cebra) */
+}
+
+.tabla-tallas tr:hover {                /* Selector para filas al pasar el mouse sobre ellas */
+  background: #eaf3ff;                  /* Cambia el color de fondo al hacer hover */
+}
+
+.card {                                 /* Selector de clase para elementos con class="card" */
+  width: 90%;                           /* Ancho del 90% del contenedor padre */
+  margin: 20px auto;                    /* Margen: 20px arriba/abajo, centrado horizontalmente */
+  padding: 20px;                        /* Espacio interno de 20 píxeles en todos los lados */
+  background: white;                    /* Color de fondo blanco */
+  border-radius: 12px;                  /* Esquinas redondeadas de 12 píxeles */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Sombra: 0px horiz, 4px vert, 15px difum, negro 15% */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+}
+
+.card h3 {                              /* Selector para <h3> dentro de elementos .card */
+  margin-top: 0;                        /* Elimina el margen superior del h3 */
+  color: black;                         /* Color del texto negro */
+  font-size: 22px;                      /* Tamaño de fuente de 22 píxeles */
+}
+
+.card p {                               /* Selector para <p> dentro de elementos .card */
+  line-height: 1.6;                     /* Altura de línea 1.6 veces el tamaño de fuente */
+  font-size: 15px;                      /* Tamaño de fuente de 15 píxeles */
+  color: #333;                          /* Color del texto gris oscuro (#333333) */
 }
